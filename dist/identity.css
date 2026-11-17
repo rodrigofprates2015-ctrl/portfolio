@@ -40,3 +40,18 @@ footer{font-family:monospace;font-size:10px}footer>a:first-child{color:var(--fg)
 /* Case-specific compositions: readable UI, paired assets, deliberate section breaks. */
 .curated-case{max-width:1180px;margin:0 auto}.curated-case .chapter-head{margin:76px 0 32px;max-width:none}.curated-art{margin:0;min-width:0}.curated-art a{display:block}.curated-art img{display:block;width:100%;height:auto;object-fit:contain}.curated-art figcaption{font:11px/1.6 monospace;color:var(--muted);margin-top:12px}.curated-art.wide{width:100%;margin:30px auto}.curated-duo{display:grid;grid-template-columns:1fr 1fr;align-items:start;gap:26px;margin:35px 0}.curated-duo .curated-art:last-child{margin-top:38px}.character-stage{display:grid;grid-template-columns:1fr 1fr;gap:25px;max-width:850px;margin:0 auto 45px;padding:30px;background:radial-gradient(ellipse,#282238,transparent 70%)}.character-stage img{width:100%;height:500px;object-fit:contain}.curated-art.banner{max-width:1000px;margin:30px auto 65px}.truther-intro{display:grid;grid-template-columns:5fr 6fr;align-items:center;gap:36px;margin:35px 0 55px}.truther-intro .curated-art:last-child{padding-top:50px}.curated-art.web-page{max-width:850px;margin:45px auto 0}.truther-communication{display:grid;grid-template-columns:4fr 5fr;gap:45px;max-width:900px;margin:0 auto 50px;align-items:start}.truther-communication .curated-art:last-child{margin-top:60px}.tik-case+.personal-features{margin-top:65px}
 @media(max-width:700px){.curated-duo,.truther-intro,.truther-communication{grid-template-columns:1fr;gap:28px}.curated-duo .curated-art:last-child,.truther-communication .curated-art:last-child{margin-top:0}.truther-intro .curated-art:last-child{padding-top:0}.character-stage{gap:12px;padding:12px}.character-stage img{height:280px}.curated-case .chapter-head{margin-top:50px}.curated-art figcaption{font-size:10px}}
+
+/* Company colours from the supplied brand references. */
+.badge-point{--ink:#10171c;--brand-detail:#e84f94}
+.badge-truther{--ink:#081b12;--brand-detail:#101714}
+.badge-etec{--ink:#fff9f1;--brand-detail:#fff9f1}
+.badge-norte{--ink:#fff;--brand-detail:#ff4b0a}
+.badge-freelas{--ink:#191613;--brand-detail:#191613}
+.badge .badge-body{color:var(--ink);border-color:var(--ink);border-top:7px solid var(--brand-detail)}
+.badge .badge-stamp{border-color:currentColor;color:var(--ink)}
+.badge .badge-end{border-bottom-color:currentColor}
+.badge .badge-body:after{background:repeating-linear-gradient(90deg,var(--ink) 0 1px,transparent 1px 3px,var(--ink) 3px 5px,transparent 5px 6px)}
+.badge-point .badge-stamp{background:var(--brand-detail);color:#10171c}
+.badge-norte .badge-stamp{background:var(--brand-detail);color:#16120f;border-color:var(--brand-detail)}
+.badge-truther .badge-stamp{background:#101714;color:#24ef98;border-color:#101714}
+.badge-etec .badge-stamp{background:#fff9f1;color:#b91f26;border-color:#fff9f1}
