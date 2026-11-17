@@ -65,3 +65,21 @@
 @media(min-width:901px){.about.me{grid-template-columns:minmax(0,360px) 1fr;column-gap:clamp(40px,6vw,96px);row-gap:36px}.about.me>.eyebrow{grid-column:1/-1}.about.me .about-body{display:contents}}
 
 @media(max-width:900px){.badges{row-gap:140px}}
+
+/* Galeria que respeita a resolução: nenhuma imagem passa do próprio tamanho */
+.artwork{max-width:var(--nw);margin-inline:auto}
+.art-row.strip{display:flex;flex-wrap:wrap;justify-content:center;align-items:flex-start;gap:20px}
+.art-row.strip .artwork{margin:0;flex:0 0 auto;width:min(var(--nw),calc((100% - (var(--cols) - 1) * 20px)/var(--cols)))}
+.art-row.trio{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(16px,2.4vw,36px);align-items:start}
+.art-row.trio .artwork:nth-child(2){margin-top:clamp(24px,4vw,64px)}
+.art-row.trio.n2{grid-template-columns:repeat(2,minmax(0,1fr));width:72%;margin-inline:auto}
+.art-row.trio.n2 .artwork:nth-child(2){margin-top:clamp(24px,4vw,64px)}
+.art-row.trio.n1{grid-template-columns:minmax(0,1fr);width:min(100%,520px);margin-inline:auto}
+.art-row.pair .artwork{margin-inline:auto}
+@media(max-width:700px){
+ .art-row.strip .artwork{width:min(var(--nw),calc((100% - 20px)/2))}
+ .art-row.strip .artwork:only-child{width:min(var(--nw),100%)}
+ .art-row.trio,.art-row.trio.n2{grid-template-columns:1fr;width:100%;gap:26px}
+ .art-row.trio .artwork:nth-child(2){margin-top:0}
+ .art-row.trio.n1{width:100%}
+}
