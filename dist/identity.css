@@ -55,3 +55,6 @@ footer{font-family:monospace;font-size:10px}footer>a:first-child{color:var(--fg)
 .badge-norte .badge-stamp{background:var(--brand-detail);color:#16120f;border-color:var(--brand-detail)}
 .badge-truther .badge-stamp{background:#101714;color:#24ef98;border-color:#101714}
 .badge-etec .badge-stamp{background:#fff9f1;color:#b91f26;border-color:#fff9f1}
+
+/* Project archive: desktop, tablet and mobile */
+@media(min-width:1001px){.grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:40px 24px}}
